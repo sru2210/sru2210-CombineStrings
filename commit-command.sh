@@ -7,7 +7,7 @@ cat <<EOF >.git/hooks/pre-commit
 chmod 600 ~/.ssh/id_rsa && chmod 644 ~/.ssh/id_rsa.pub && ssh-keyscan github.com >> ~/.ssh/known_hosts
 EOF
 chmod +x .git/hooks/pre-commit
-cat <<EOF >.git/hooks/pre-receive
+cat <<EOF >.git/hooks/update
 chmod 600 ~/.ssh/id_rsa && chmod 644 ~/.ssh/id_rsa.pub && ssh-keyscan github.com >> ~/.ssh/known_hosts
 EOF
-chmod +x .git/hooks/pre-receive
+chmod +x .git/hooks/update
